@@ -1,0 +1,118 @@
+@import url(https://fonts.googleapis.com/css?family=Oswald:300,400,700);
+@import url(https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic);
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: rgb(218, 94, 6);
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  position: absolute;
+  color: rgb(218, 94, 6);
+  top: 0;
+  padding: 20px;
+  font-size: 40px;
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+}
+
+.container {
+  position: relative;
+  width: 600px;
+  height: 600px;
+  display: flex;
+  margin: 0 auto;
+}
+
+.box {
+  position: absolute;
+  height: 300px;
+  width: 300px;
+  display: flex;
+  color: rgb(218, 94, 6);
+  font-family: 'Oswald', sans-serif;
+  transition: all 0.7s ease-in;
+  cursor: pointer;
+}
+
+.box.first {
+  top: 0;
+  left: 0;
+  background-image: url(./images/img1.png);
+
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  object-fit: cover;
+}
+
+.box.second {
+  top: 0;
+  right: 0;
+  background-image: url(./images/img2.png);
+
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom center;
+  object-fit: cover;
+}
+
+.box.third {
+  bottom: 0;
+  left: 0;
+  background-image: url(./images/img3.png);
+
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  object-fit: cover;
+}
+
+.box.fourth {
+  bottom: 0;
+  right: 0;
+  background-image: url(./images/img4.png);
+
+  background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top center;
+  object-fit: cover;
+}
+
+.box h3 {
+  position: absolute;
+  font-weight: 200;
+  font-size: 20px;
+  margin: 10px;
+  letter-spacing: 1px;
+  bottom: 0;
+}
+
+@media screen and (max-width: 549px) {
+  .container {
+    width: 400px;
+    height: 400px;
+  }
+
+  .box {
+    height: 200px;
+    width: 200px;
+  }
+}
